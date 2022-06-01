@@ -617,7 +617,7 @@
     </div>
     <div class="price">
         <span>Subscription: R99/Week</span> </br>
-        <a style="text-decoration: underline; color: inherit; display: block" href="#">Terms & Conditions</a>
+        <a style="text-decoration: underline; color: inherit; display: block" href="https://zamm2.hustler-world.com/terms">Terms & Conditions</a>
     </div>
 </div>
 

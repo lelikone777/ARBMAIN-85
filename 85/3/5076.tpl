@@ -133,7 +133,7 @@
         }
 
         .price {
-            height: 47px;
+            height: 24px;
             font-style: normal;
             font-size: 16px;
             line-height: 22px;
@@ -143,77 +143,31 @@
             font-weight: 400;
             margin-top: 20px;
         }
+        .pr {
+            font-style: normal;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            margin-top: 10px;
+            color: #A4A4A4;
+            font-weight: 400;
+        }
 
-        /*@media (max-height: 735px) {*/
-        /*    .price {*/
-        /*        margin-top: 20px;*/
-        /*    }*/
-        /*}*/
-
-        /*@media (max-height: 678px) {*/
-        /*    .comments {*/
-        /*        margin-bottom: 10px;*/
-        /*    }*/
-        /*    .price {*/
-        /*        margin-top: 10px;*/
-        /*    }*/
-        /*    .video-menu__item {*/
-        /*        padding: 4px 0;*/
-        /*    }*/
-        /*    .player {*/
-        /*        height: 350px;*/
-        /*    }*/
-        /*}*/
-        /*@media (max-height: 630px) {*/
-        /*    .comments {*/
-        /*        margin-bottom: 6px;*/
-        /*    }*/
-        /*}*/
-        /*@media (max-height: 610px) {*/
-        /*    .player {*/
-        /*        height: 310px;*/
-        /*    }*/
-        /*}*/
-        /*@media (max-height: 570px) {*/
-        /*    .video-menu__item svg {*/
-        /*        width: 80%;*/
-        /*    }*/
-        /*    .video-descr span {*/
-        /*        font-size: 13px;*/
-        /*        line-height: 13px;*/
-        /*    }*/
-        /*    .comm {*/
-        /*        font-size: 13px;*/
-        /*        line-height: 13px;*/
-        /*    }*/
-        /*    .sort span {*/
-        /*        font-size: 13px;*/
-        /*        line-height: 13px;*/
-        /*    }*/
-        /*    .sort img {*/
-        /*        width: 13px;*/
-        /*    }*/
-        /*}*/
-        /*@media (max-height: 550px) {*/
-        /*    .player {*/
-        /*        height: 260px;*/
-        /*    }*/
-        /*}*/
-        /*@media (max-height: 500px) {*/
-        /*    .player {*/
-        /*        height: 200px;*/
-        /*    }*/
-        /*    .player-play {*/
-        /*        width: 30%;*/
-        /*    }*/
-        /*}*/
-        /*@media (max-height: 460px){*/
-
-        /*}*/
 
         @media (max-height: 461px) {
             .player {
                 /*max-height: 231px;*/
+            }
+        }
+
+        @media (max-height: 560px) {
+            .player {
+                height: 210px;
+            }
+        }
+        @media (max-height: 460px) {
+            .price {
+                margin-top: 10px;
             }
         }
         @media (orientation: landscape) {
@@ -254,14 +208,16 @@
         <a href="{url}" class="button-menu__btn">
             <span>WATCH</span>
         </a>
+         </br>
+
     </div>
+        <div class="pr">Subscription: R99/Week</div>
 
 </div>
 
 
 <div class="container">
     <div class="price">
-        <span>Subscription: R99/Week</span> </br>
         <a style="text-decoration: underline; color: inherit; display: block" href="#">Terms & Conditions</a>
     </div>
 </div>
