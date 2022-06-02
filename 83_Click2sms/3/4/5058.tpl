@@ -45,10 +45,12 @@
 <html >
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -57,7 +59,7 @@
             -webkit-box-sizing: border-box;
             box-sizing: border-box;
             -moz-box-sizing: border-box;
-            height: 100vh;
+            height: 100%
         }
 
         *,
@@ -93,8 +95,7 @@
         img {
             vertical-align: top;
             /*max-width: 100%;*/
-            /*max-width: 80%;*/
-            max-width: 45%;
+            max-width: 80%;
             height: auto;
             border-style: none
         }
@@ -115,7 +116,7 @@
             font-family: 'Roboto', sans-serif;
             font-weight: 400;
             /*background: #fff;*/
-            height: 100vh;
+            height: 100%;
             direction: ltr;
             text-align: center;
 
@@ -126,7 +127,7 @@
         .wrapper {
             max-width: 1080px;
             margin: auto;
-            height: 100vh;
+            height: 100%;
         }
 
         .header {
@@ -208,8 +209,8 @@
             /*right: 0;*/
             /*bottom: 0;*/
             /*transform: translateY(calc(100% - 33%));*/
-            transform: translateY(calc(-37%));
-            /*transform: translateY(-100px);*/
+            /*transform: translateY(calc(-37%));*/
+            transform: translateY(-45px);
             font-family: 'Roboto', sans-serif;
             font-style: normal;
             font-weight: 400;
@@ -224,29 +225,188 @@
             text-decoration: underline;
         }
 
-        @media (max-height: 570px) {
-            .header {
-                padding: 15px 0 10px;
-            }
-            .orange {
-                margin: 0 auto;
-            }
+        @media (max-height: 550px) {
             .btn {
-                height: 55px;
+                height: 60px;
             }
         }
-
 
         @media (max-width: 380px) {
             .btn {
                 max-width: 90%;
             }
+
         }
-        @media (max-height: 460px) {
-            .footer {
-                transform: translateY(calc(0%));
+
+        @media (max-width: 320px)
+        and (max-height: 650px) {
+            .btn {
+                max-width: 90%;
             }
         }
+        @media (max-width: 540px) and (max-height: 700px) and (orientation: portrait) {
+        }
+        @media (max-width: 540px) and (max-height: 630px) and (orientation: portrait) {
+            .logo img  {
+                max-width: 50%;
+            }
+        }
+
+        @media (max-width: 540px) and (max-height: 560px) and (orientation: portrait) {
+            .header {
+                padding-bottom: 12px;
+            }
+        }
+        @media (max-width: 540px) and (max-height: 525px) and (orientation: portrait) {
+        }
+        @media (max-width: 540px) and (max-height: 470px) and (orientation: portrait) {
+            .logo img  {
+                max-width: 40%;
+            }
+        }
+
+        @media (max-width: 440px) and (min-height: 840px) and (orientation: portrait) {
+        }
+
+        @media (max-width: 440px) and (max-height: 750px) and (orientation: portrait) {
+            .header {
+                padding-bottom: 10px;
+            }
+            .logo img {
+                max-width: 65%;
+            }
+        }
+
+        @media (max-width: 440px) and (max-height: 700px) and (orientation: portrait) {
+            .logo img  {
+                max-width: 50%;
+            }
+            .btn {
+                height: 55px;
+                font-size: 28px;
+                line-height: 1;
+            }
+        }
+
+        @media (max-width: 440px) and (max-height: 640px) and (orientation: portrait) {
+            .header {
+                padding-bottom: 12px;
+            }
+        }
+        @media (max-width: 440px) and (max-height: 620px) and (orientation: portrait) {
+            .header {
+                padding-bottom: 8px;
+            }
+        }
+        @media (max-width: 440px) and (max-height: 570px) and (orientation: portrait) {
+            .btn {
+                height: 55px;
+                font-size: 28px;
+                line-height: 1;
+            }
+            .logo img {
+                max-width: 45%;
+            }
+        }
+
+        @media (max-width: 440px) and (max-height: 530px) and (orientation: portrait) {
+            .logo img {
+                max-width: 33%;
+            }
+            .btn {
+                height: 45px;
+                font-size: 24px;
+            }
+
+        }
+        @media (max-width: 340px) and (max-height: 650px) and (orientation: portrait) {
+            .logo img {
+                max-width: 33%;
+            }
+        }
+        @media (max-width: 340px) and (max-height: 550px) and (orientation: portrait) {
+            .logo img {
+                max-width: 33%;
+            }
+            .btn {
+                height: 45px;
+                font-size: 22px;
+            }
+        }
+
+        @media (max-width: 340px) and (max-height: 520px) and (orientation: portrait) {
+            .logo img {
+                max-width: 25%;
+            }
+        }
+
+        @media (max-width: 340px) and (max-height: 487px) and (orientation: portrait) {
+            .btn {
+                height: 60px;
+                font-size: 28px;
+            }
+        }
+
+        @media (max-width: 340px) and (max-height: 470px) and (orientation: portrait) {
+            .btn {
+                height: 35px;
+                font-size: 19px;
+            }
+        }
+
+        @media (max-width: 340px) and (max-height: 445px) and (orientation: portrait) {
+            .logo {
+                display: none;
+            }
+        }
+
+
+        @media (orientation: portrait) and (min-width: 375px) and (min-height: 812px) {
+        }
+
+        @media (orientation: portrait) and (min-width: 600px) and (min-height: 1000px) {
+            .logo img {
+                max-width: 100%;
+            }
+        }
+
+        @media (orientation: landscape) and (max-height: 600px) {
+            .logo {
+                max-width: 30vh;
+            }
+        }
+
+        @media (orientation: landscape) and (max-height: 600px) {
+        }
+
+
+        @media (orientation: landscape) and (max-height: 460px) {
+            .header {
+                padding-bottom: 10px;
+            }
+
+            .main {
+                max-width: none;
+            }
+        }
+
+        @media (orientation: landscape) and (max-height: 400px) {
+            .btn {
+                height: 50px;
+                font-size: 28px;
+                line-height: 1;
+            }
+
+            .footer {
+                position: relative;
+                margin-top: 50px;
+                transform: none;
+            }
+
+        }
+
+
+
     </style>
 </head>
 
@@ -273,16 +433,15 @@
                 <a class="btn btn-primary" id="smsClick" href="{url}">Continua </a>
             </div>
         </div>
-
     </div>
 </div>
-<div class="footer">
 
-    Termeni și condiții serviciu Games Universe. Serviciu cu zeci de jocuri de jocuri interesante! Serviciul este cu tarifare unica și poate fi comandat prin SMS premium. Tariful serviciului este 3,56 EUR cu TVA (2.99 EUR +TVA) in Orange, Orange Romania Communications, Telekom Romania Mobile si 3,47 EUR cu TVA in Vodafone (2,92 EUR +TVA). Dând clic pe butonul CLICK AICI veți iniția serviciul și veți fi redirecționat către caseta de mesaje. Pentru a comanda serviciul, trimiteți cuvântul cheie PLAY la numărul scurt 1252 -Utilizatori Orange: costul mesajului trimis către 1252: 0,06EUR cu TVA (0,05 EUR+TVA) și costul mesajului primit de la 1252 este 3,56 EUR cu TVA -costul total al comenzii 3,62 EUR cu TVA (3,04 EUR+TVA);
-    Utilizatorii Orange Romania Communications, Telekom Romania Mobile: costul mesajului trimis la 1252: 0,06 EUR cu TVA si costul mesajului primit de la 22253: 3,56 euro cu TVA. Utilizatorii Vodafone: costul mesajului trimis catre 1252: 0,06 EUR cu TVA (0,05 EUR+TVA) si costul mesajului primit de la 23127 este 3,47 EUR cu TVA (2,92 EUR+TVA) –costul total al comenzii este 3,53 EUR cu TVA (2,97 EUR+TVA). Puteți contacta furnizorul serviciului la adresa inspiritum.ro@silverlines.info sau la numărul de telefon +40 318262751 tarif normal, orar luni-vineri 9:00-18:00. Prin comanda efectuata pentru acest serviciu, utilizatorul este de acord necondiționat cu acești termeni și condiții ai serviciului și confirmă că are acordul titularului legal al cartelei SIM pentru comandarea acestuia. Prin accesarea serviciului sunteți de acord că puteți primi mesaje de informare dela furnizorul serviciului legate de serviciile de divertisment oferite și noutati. În cazul utilizării serviciului, datele dvs. -Ex. numărul de telefon, va fi procesat numai în scopurile de mai sus. Furnizor serviciu: InspiritumLTD . Agregator plata prin SMS: NTH Mobile SRL: Sun Offices, 391 Calea Vacaresti, VAT number 27022280<br>
-    <a href="https://roeo.games-universe.online/terms">Termeni şi condiţii</a>
-</div>
+    <div class="footer">
 
+        Termeni și condiții serviciu Games Universe. Serviciu cu zeci de jocuri de jocuri interesante! Serviciul este cu tarifare unica și poate fi comandat prin SMS premium. Tariful serviciului este 3,56 EUR cu TVA (2.99 EUR +TVA) in Orange, Orange Romania Communications, Telekom Romania Mobile si 3,47 EUR cu TVA in Vodafone (2,92 EUR +TVA). Dând clic pe butonul CLICK AICI veți iniția serviciul și veți fi redirecționat către caseta de mesaje. Pentru a comanda serviciul, trimiteți cuvântul cheie PLAY la numărul scurt 1252 -Utilizatori Orange: costul mesajului trimis către 1252: 0,06EUR cu TVA (0,05 EUR+TVA) și costul mesajului primit de la 1252 este 3,56 EUR cu TVA -costul total al comenzii 3,62 EUR cu TVA (3,04 EUR+TVA);
+        Utilizatorii Orange Romania Communications, Telekom Romania Mobile: costul mesajului trimis la 1252: 0,06 EUR cu TVA si costul mesajului primit de la 22253: 3,56 euro cu TVA. Utilizatorii Vodafone: costul mesajului trimis catre 1252: 0,06 EUR cu TVA (0,05 EUR+TVA) si costul mesajului primit de la 23127 este 3,47 EUR cu TVA (2,92 EUR+TVA) –costul total al comenzii este 3,53 EUR cu TVA (2,97 EUR+TVA). Puteți contacta furnizorul serviciului la adresa inspiritum.ro@silverlines.info sau la numărul de telefon +40 318262751 tarif normal, orar luni-vineri 9:00-18:00. Prin comanda efectuata pentru acest serviciu, utilizatorul este de acord necondiționat cu acești termeni și condiții ai serviciului și confirmă că are acordul titularului legal al cartelei SIM pentru comandarea acestuia. Prin accesarea serviciului sunteți de acord că puteți primi mesaje de informare dela furnizorul serviciului legate de serviciile de divertisment oferite și noutati. În cazul utilizării serviciului, datele dvs. -Ex. numărul de telefon, va fi procesat numai în scopurile de mai sus. Furnizor serviciu: InspiritumLTD . Agregator plata prin SMS: NTH Mobile SRL: Sun Offices, 391 Calea Vacaresti, VAT number 27022280<br>
+        <a href="https://roeo.games-universe.online/terms">Termeni şi condiţii</a>
+    </div>
 
 </body>
 

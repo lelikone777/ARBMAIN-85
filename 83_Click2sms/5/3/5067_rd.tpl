@@ -299,9 +299,14 @@
             color: #a2a2a2;
             padding: 0 5px;
             font-size: 12px;
-            position: absolute;
-            left: 0;
-            bottom: 0;
+            /*position: absolute;*/
+            /*left: 0;*/
+            /*bottom: 0;*/
+
+            transform: translateY(-70px);
+            max-width: 550px;
+            margin: 0 auto;
+            text-align: center;
         }
         .foot{
 

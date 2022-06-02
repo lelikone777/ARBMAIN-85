@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html style="--vh:6.54px;">
+<html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="robots" content="noindex, nofollow">
@@ -16,7 +16,6 @@
             height: 100%;
             background: #fff;
         }
-
         *,
         :before,
         :after {
@@ -24,17 +23,14 @@
             box-sizing: inherit;
             -moz-box-sizing: inherit
         }
-
         * {
             max-height: 1000000px;
             outline: none
         }
-
         input {
             border: none;
             outline: none;
         }
-
         h1,
         h2,
         h3,
@@ -46,21 +42,18 @@
             font-weight: 400;
             margin: 0
         }
-
         img {
             vertical-align: top;
             max-width: 100%;
             height: auto;
             border-style: none
         }
-
         a {
             display: inline-block;
             text-decoration: none;
             outline: none;
             color: inherit
         }
-
         body {
             -ms-text-size-adjust: none;
             -moz-text-size-adjust: 100%;
@@ -74,69 +67,20 @@
             direction: ltr;
             text-align: center;
         }
-
         .wrapper {
             position: relative;
-            max-width: 1080px;
             margin: auto;
             height: 100%;
         }
-
         .header {
             position: relative;
-            padding: 2vh 0 7vh;
+            padding: 20px 0;
         }
-
-        .header-logo {
-            position: relative;
-            padding-bottom: 2vh;
-            margin: auto;
-        }
-        @media (max-width: 380px) {
-            .header-logo {
-                width: 135px;
-            }
-        }
-
         .logo {
             max-width: 160px;
             width: 100%;
             margin: 0 auto;
         }
-
-        .smsBlock {
-            position: fixed;
-
-
-            width: 70px;
-            height: 70px;
-            padding: 6px 6px 16px 6px;
-
-            top: 10px;
-            right: 10px;
-            font-family: Arial, sans-serif;
-            background: #fff;
-            border: 1px solid #000;
-            z-index: 1;
-        }
-        .smsBlock__short {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            background-color: #000;
-            /*font-size: 38px;*/
-            font-size: 20px;
-            line-height: 1;
-        }
-        .smsBlock__price {
-            /*font-size: 20px;*/
-            font-size: 11px;
-            color: #000;
-        }
-
         .header-info {
             position: absolute;
             top: 15px;
@@ -145,38 +89,17 @@
             color: #fff;
             z-index: 1;
         }
-
-
-
-
-
-
-
-
-
         .container {
-            height: 100%;
+            margin: 0 auto;
+            max-width: 550px;
         }
-
         .content {
-            padding: 0 4.5em;
+            padding: 0 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
-
-        .input {
-            text-align: center;
-            font-weight: 600;
-            color: #686868;
-            font-size: 30px;
-            border-bottom: 1px solid #adadad;
-            margin: 2vh auto;
-            padding: 12px;
-            width: 60%;
-            max-width: 590px;
-            background: url(../img/flag.png) no-repeat 8% center;
-            background-size: auto 65%;
-            padding-left: 7vh !important;
-        }
-
         .btn {
             background-color: #2ebddd;
             color: #fff;
@@ -184,88 +107,41 @@
             font-size: 24px;
             padding: 16px;
             cursor: pointer;
-            width: 60%;
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-
         .price {
             margin-top: 5px;
             color: rgb(150, 150, 150);
             font-size: 12px;
         }
-
         .orange {
-            color: #ff5300 !important;
-            font-size: 2.2em;
+            font-size: 26px;
+            line-height: 28px;
             text-align: center;
             margin: 0 0 1em;
-            color: #747474;
-            line-height: 1.4em;
+            color: #ff5300;
         }
-
-        .green {
-            color: #00b58a !important;
-            font-size: 2.2em;
-            text-align: center;
-            margin: 1em 0;
-            color: #747474;
-            line-height: 1.4em;
-            margin-bottom: 0;
-        }
-
-        .bottom {
-            position: absolute;
-            bottom: 10px;
-            left: 0;
-            width: 100%;
-        }
-
-        .hide {
-            display: none;
-        }
-
         .footer {
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            /*position: absolute;*/
+            /*left: 0;*/
+            /*right: 0;*/
+            /*bottom: 0;*/
             padding: 0 1px 3px;
             color: #a2a2a2;
             font-size: 13px;
             line-height: 12px;
+            transform: translateY(-70px);
+            background: white;
+            max-width: 550px;
+            margin: 0 auto;
+            text-align: center;
         }
-
         .footer a {
             text-decoration: underline;
         }
-
-        .terms {
-            display: block;
-            font-weight: bold;
-        }
-
-        .loader_box {
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.65);
-            z-index: 50;
-        }
-
-        .loader {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            width: 75px;
-            height: 75px;
-            z-index: 51;
-        }
-
         @media screen and (max-width: 500px) and (max-height: 900px) {
             .header {
                 padding: 4vh 0;
@@ -419,7 +295,7 @@
             }
         }
 
-        
+
         @media (orientation: landscape) {
             .orange {
                 max-width: 60%;
@@ -518,12 +394,14 @@
                 </p>
                 <a class="btn btn-primary" id="smsClick" href="{url}" onclick="clearTimeout(to);">CONTINUAR</a><br>
             </div>
-            <div style="transform: translateY(17vh); background: white" class="footer">
-                <p style="margin-bottom: 4px;" class="price">4 Euros por SMS</p>
-                Games Universe é um serviço de utilização exclusiva de Inspiritum LTD. O serviço é único e pode ser cobrado via SMS premium. A taxa de serviço é de 4 €. Para solicitar o serviço, clique em «Enviar SMS» e será redirecionado para a caixa de mensagens onde poderá iniciar o processo de pagamento enviando a palavra-chave PLAY para número 68638. Poderá entrar em contato com o detentor do serviço em insp.pt@silverlines.info ou na linha telefónica de taxa normal pelo número +351 211451299, no horário de segunda a sexta-feira das 9:00 às 18:00 horas. Pelo pedido feito para este serviço, o utilizador concorda incondicionalmente com estes <a href="https://ptnm.games-universe.online/terms">Termos e Condições</a> do serviço e confirma que tem o consentimento do titular legal do cartão SIM para executar o pedido.
-                Consulte os nossos&nbsp;<a href="https://ptnm.games-universe.online/terms">Termos & Condições</a>
-            </div>
         </div>
+    </div>
+
+
+    <div class="footer">
+        <p style="margin-bottom: 4px;" class="price">4 Euros por SMS</p>
+        Games Universe é um serviço de utilização exclusiva de Inspiritum LTD. O serviço é único e pode ser cobrado via SMS premium. A taxa de serviço é de 4 €. Para solicitar o serviço, clique em «Enviar SMS» e será redirecionado para a caixa de mensagens onde poderá iniciar o processo de pagamento enviando a palavra-chave PLAY para número 68638. Poderá entrar em contato com o detentor do serviço em insp.pt@silverlines.info ou na linha telefónica de taxa normal pelo número +351 211451299, no horário de segunda a sexta-feira das 9:00 às 18:00 horas. Pelo pedido feito para este serviço, o utilizador concorda incondicionalmente com estes <a href="https://ptnm.games-universe.online/terms">Termos e Condições</a> do serviço e confirma que tem o consentimento do titular legal do cartão SIM para executar o pedido.
+        Consulte os nossos&nbsp;<a href="https://ptnm.games-universe.online/terms">Termos & Condições</a>
     </div>
 
     <script type="text/javascript">
